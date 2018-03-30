@@ -4,7 +4,7 @@
 
 ## 问题 & 原因 & 解决
 
-1. 运行时报 `jQuery.handleError is not a function` 错误[^1]
+1. 运行时报 `jQuery.handleError is not a function` 错误
 
     * 原因：ajaxfileupload.js 是在 jQuery 1.4.2 版本之前写的，之后的版本已经没有了 handleError 方法
 
@@ -47,13 +47,13 @@
         }
         ```
 
-    * 解决2：将上传方法 $.ajaxFileUpload() 中的 `dataType` 设置为 `text`，直接获取字符串[^2]
+    * 解决2：将上传方法 $.ajaxFileUpload() 中的 `dataType` 设置为 `text`，直接获取字符串
 
 3. 无法带参数提交，只能上传文件
 
     * 原因：原作者只完成了文件提交功能……
 
-    * 解决：修改 createUploadForm 方法及其调用位置[^1]
+    * 解决：修改 createUploadForm 方法及其调用位置
 
         ```javascript
         createUploadForm: function (id, fileElementId, data) {// 添加 data 参数
@@ -79,7 +79,7 @@
         }
         ```
 
-4. 造成 input[type=file] 的 chang 事件只能触发一次[^3]
+4. 造成 input[type=file] 的 chang 事件只能触发一次
 
     * 原因：ajaxfileupload.js 会将原 file 元素替换成新的 file 元素，且替换时未绑定事件
 
@@ -101,7 +101,7 @@
 
 1. 页面部分
 
-    通过设置 input[type=file] 的 `accept` 属性，可限制上传文件的类型[^4]，多个类型用英文逗号隔开。
+    通过设置 input[type=file] 的 `accept` 属性，可限制上传文件的类型，多个类型用英文逗号隔开。
 
     ```html
     <div class="upload_div">
@@ -116,7 +116,7 @@
 
     * 原因：一般来说，默认的 input[type=file] 太丑了，且不同浏览器下差距较大，因此会对其进行隐藏，使用其他标签替代
     * 问题：由于 IE 安全限制问题，没有点击到 input[type=file] 的浏览按钮就不允许上传
-    * 解决方案：让 file 标签盖在替代标签上，但 file 是透明的，这样用户看到的是替代标签的外观，实际点击是 file 标签[^5]
+    * 解决方案：让 file 标签盖在替代标签上，但 file 是透明的，这样用户看到的是替代标签的外观，实际点击是 file 标签
 
     ```css
     input {
@@ -195,12 +195,12 @@
 
 ## 参考
 
-[^1]: [ajaxfileupload.js 问题汇总及解决](https://blog.yadgen.com/?p=970)
+[ajaxfileupload.js 问题汇总及解决](https://blog.yadgen.com/?p=970)
 
-[^2]: [关于 AjaxFileUpload 后台返回 Json 的处理](https://blog.csdn.net/gisredevelopment/article/details/29869109)
+[关于 AjaxFileUpload 后台返回 Json 的处理](https://blog.csdn.net/gisredevelopment/article/details/29869109)
 
-[^3]: [关于 ajaxFileUpload 造成 input[type=file] change 事件只能触发一次的问题](https://blog.csdn.net/sinat_34930640/article/details/77368681)
+[关于 ajaxFileUpload 造成 input[type=file] change 事件只能触发一次的问题](https://blog.csdn.net/sinat_34930640/article/details/77368681)
 
-[^4]: [MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
+[MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
 
-[^5]: [IE input file 隐藏不能上传文件解决方法](http://www.qttc.net/201305334.html)
+[IE input file 隐藏不能上传文件解决方法](http://www.qttc.net/201305334.html)
