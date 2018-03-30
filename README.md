@@ -193,8 +193,14 @@
     1. `fileName` 参数名称要与 html 中 input[type=file] 的 `name` 属性相同
     2. `key1`、`key2` 参数名称要与 js 中封装参数的键相同
 
+## 参考
+
 [^1]: [ajaxfileupload.js问题汇总及解决 附修复版下载](https://blog.yadgen.com/?p=970)
+
 [^2]: [关于AjaxFileUpload后台返回Json的处理](https://blog.csdn.net/gisredevelopment/article/details/29869109)
+
 [^3]: [关于ajaxFileUpload造成 input[type=file] change事件只能触发一次的问题](https://blog.csdn.net/sinat_34930640/article/details/77368681)
+
 [^4]: [MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
+
 [^5]: [IE input file隐藏不能上传文件解决方法](http://www.qttc.net/201305334.html)
