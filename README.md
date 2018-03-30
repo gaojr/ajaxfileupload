@@ -79,7 +79,7 @@
         }
         ```
 
-4. 造成 input[type=file] 的 chang 事件只能触发一次
+4. 造成 input[type=file] 的 change 事件只能触发一次
 
     * 原因：ajaxfileupload.js 会将原 file 元素替换成新的 file 元素，且替换时未绑定事件
 
