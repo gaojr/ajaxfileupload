@@ -195,12 +195,12 @@
 
 ## 参考
 
-[^1]: [ajaxfileupload.js问题汇总及解决 附修复版下载](https://blog.yadgen.com/?p=970)
+[^1]: [ajaxfileupload.js 问题汇总及解决](https://blog.yadgen.com/?p=970)
 
-[^2]: [关于AjaxFileUpload后台返回Json的处理](https://blog.csdn.net/gisredevelopment/article/details/29869109)
+[^2]: [关于 AjaxFileUpload 后台返回 Json 的处理](https://blog.csdn.net/gisredevelopment/article/details/29869109)
 
-[^3]: [关于ajaxFileUpload造成 input[type=file] change事件只能触发一次的问题](https://blog.csdn.net/sinat_34930640/article/details/77368681)
+[^3]: [关于 ajaxFileUpload 造成 input[type=file] change 事件只能触发一次的问题](https://blog.csdn.net/sinat_34930640/article/details/77368681)
 
 [^4]: [MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
 
-[^5]: [IE input file隐藏不能上传文件解决方法](http://www.qttc.net/201305334.html)
+[^5]: [IE input file 隐藏不能上传文件解决方法](http://www.qttc.net/201305334.html)
