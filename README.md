@@ -89,7 +89,6 @@
         createUploadForm: function (id, fileElementId, data) {
             ...
             var newElement = $(oldElement).clone(true);// true：复制元素的同时复制事件
-            // newElement.val("");// 清空原有数据
             $(oldElement).attr('id', fileId);
             $(oldElement).before(newElement);
             $(oldElement).appendTo(form);
@@ -114,7 +113,7 @@
 
 2. 样式部分
 
-    * 原因：一般来说，默认的 input[type=file] 太丑了，且不同浏览器下差距较大，因此会对其进行隐藏，使用其他标签替代
+    * 原因：一般来说，默认的 input[type=file] 太丑了，且不同浏览器下视觉效果差距较大，因此会对其进行隐藏，使用其他标签替代
     * 问题：由于 IE 安全限制问题，没有点击到 input[type=file] 的浏览按钮就不允许上传
     * 解决方案：让 file 标签盖在替代标签上，但 file 是透明的，这样用户看到的是替代标签的外观，实际点击是 file 标签
 
@@ -191,7 +190,7 @@
 
     **注意：**
     1. `fileName` 参数名称要与 html 中 input[type=file] 的 `name` 属性相同
-    2. `key1`、`key2` 参数名称要与 js 中封装参数的键相同
+    2. `key1`、`key2` 等参数名称要与 js 中封装参数的键相同
 
 ## 参考
 

@@ -45,7 +45,6 @@ jQuery.extend({
         var form = $('<form  action="" method="POST" name="' + formId + '" id="' + formId + '" enctype="multipart/form-data"></form>');
         var oldElement = $('#' + fileElementId);
         var newElement = $(oldElement).clone(true);// true：复制元素的同时复制事件
-        // newElement.val("");// 清空原有数据
         $(oldElement).attr('id', fileId);
         $(oldElement).before(newElement);
         $(oldElement).appendTo(form);
